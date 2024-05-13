@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\BlogController;
+use App\Http\Controllers\Api\MenuwebController;
 use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
@@ -13,3 +14,4 @@ Route::get('/user', function (Request $request) {
 Route::apiResource('/products', ProductController::class);
 Route::apiResource('/posts', PostController::class);
 Route::apiResource('blogs', BlogController::class);
+Route::apiResource('menuwebs', MenuwebController::class);
